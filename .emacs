@@ -90,7 +90,7 @@
 
 (add-to-list 'auto-mode-alist '("\\.t\\'" . cperl-mode))
 
-(load "/Users/ramesh/.emacs.d/nxhtml/autostart.el")
+;;(load "/Users/ramesh/.emacs.d/nxhtml/autostart.el")
 
 (setq javascript-mode-hook
     (function (lambda ()
@@ -107,23 +107,24 @@
    (skip-chars-forward " \t")
  )
 
+(add-to-list 'load-path "~/scala-tool-support-2.10.3/scala-emacs-mode")
 (require 'scala-mode-auto)
 ;; Load the ensime lisp code...
-(add-to-list 'load-path "/Users/ramesh/Downloads/ensime_2.9.1-0.7.6/elisp/")
-(require 'ensime)
+;;(add-to-list 'load-path "/Users/ramesh/Downloads/ensime_2.9.1-0.7.6/elisp/")
+;;(require 'ensime)
 
 ;; This step causes the ensime-mode to be started whenever
 ;; scala-mode is started for a buffer. You may have to customize this step
 ;; if you're not using the standard scala mode.
-(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
+;;(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 
-(load "~/Downloads/haskell-mode-2.8.0/haskell-site-file")
-(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
-(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+;;(load "~/Downloads/haskell-mode-2.8.0/haskell-site-file")
+;;(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
+;;(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
 ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
 
-(add-hook 'scala-mode-hook (lambda () (abbrev-mode 1)))
+;;(add-hook 'scala-mode-hook (lambda () (abbrev-mode 1)))
 
 (setq frame-title-format '("%b - %f"))
 (define-abbrev-table 'global-abbrev-table '(
