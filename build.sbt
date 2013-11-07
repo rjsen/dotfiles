@@ -8,9 +8,11 @@ libraryDependencies ++= Seq("org.specs2" %% "specs2" % "2.3.3" % "test",
 	"net.databinder.dispatch" %% "dispatch-core" % "0.11.0",
 	"joda-time" % "joda-time" % "2.1",
         "org.joda" % "joda-convert" % "1.2",
-	"io.spray" %%  "spray-json" % "1.2.5"
+        "org.json4s" %% "json4s-native" % "3.2.2"
 )
 
 scalacOptions in Test ++= Seq("-Yrangepos")
 
 resolvers ++= Seq("snapshots", "releases").map(Resolver.sonatypeRepo)
+
+resolvers += "spray" at "http://repo.spray.io/"
