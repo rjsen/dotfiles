@@ -1,0 +1,20 @@
+{
+	"name": "theme-ramesh",
+	"displayName": "%displayName%",
+	"description": "%description%",
+	"version": "1.0.0",
+	"publisher": "vscode",
+	"license": "MIT",
+	"engines": {
+		"vscode": "*"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Ramesh",
+				"uiTheme": "vs-dark",
+				"path": "./themes/ramesh-color-theme.json"
+			}
+		]
+	}
+}
